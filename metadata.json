@@ -1,0 +1,6 @@
+{
+  "name": "Binastra Cochrane",
+  "description": "A premium sales page and property-matching questionnaire for the Binastra Cochrane freehold serviced apartments in Kuala Lumpur.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
