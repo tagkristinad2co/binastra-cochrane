@@ -394,9 +394,17 @@ export default function Questionnaire({
       timestamp: new Date().toISOString()
     });
 
+    if (typeof window.fbq === "function") {
+      window.fbq("track", "Lead", {
+        content_name: recommendedUnit?.name || "",
+        content_category: "Property Registration"
+      });
+    }
+
     setFunnelStep("recommendation");
   } catch (error) {
     console.error(error);
+
 
     setSubmissionError(
       "Unable to submit your registration. Please try again."
